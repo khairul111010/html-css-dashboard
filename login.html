@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>কওমী তালীম</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#441a05",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="relative min-h-screen w-screen flex items-center justify-center p-4 bg-cover bg-center bg-no-repeat"
+      style="background-image: url('./assets/backgrounds/login/login-bg.png')"
+    >
+      <form
+        class="w-full max-w-md bg-primary/10 rounded p-6 shadow-lg backdrop-blur"
+      >
+        <h1 class="text-center text-3xl font-bold text-primary my-6">
+          কওমী তালীম
+        </h1>
+
+        <label for="user_name" class="block text-sm font-medium text-primary"
+          >ব্যবহারকারীর নাম</label
+        >
+        <input
+          type="text"
+          id="user_name"
+          name="user_name"
+          class="mt-1 block w-full border border-primary rounded p-2"
+          placeholder="ব্যবহারকারীর নাম লিখুন"
+        />
+
+        <label
+          for="password"
+          class="block text-sm font-medium text-primary mt-4"
+          >পাসওয়ার্ড</label
+        >
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="mt-1 block w-full border border-primary rounded p-2"
+          placeholder="পাসওয়ার্ড লিখুন"
+        />
+
+        <button
+          type="submit"
+          class="mt-4 w-full bg-primary text-white py-2 rounded"
+        >
+        
+          লগইন
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
