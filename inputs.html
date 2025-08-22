@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon/favicon.png">
     <title>কওমী তালীম</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,7 +48,7 @@
               type="text"
               id="user_name"
               name="user_name"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
               placeholder="ব্যবহারকারীর নাম লিখুন"
             />
           </div>
@@ -61,7 +62,7 @@
               type="password"
               name="password"
               id="password"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
               placeholder="পাসওয়ার্ড লিখুন"
             />
           </div>
@@ -75,7 +76,7 @@
               type="email"
               id="email"
               name="email"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
               placeholder="আপনার ইমেইল লিখুন"
             />
           </div>
@@ -89,7 +90,7 @@
               type="tel"
               id="phone"
               name="phone"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
               placeholder="০১৭xxxxxxxx"
             />
           </div>
@@ -103,7 +104,7 @@
               type="url"
               id="website"
               name="website"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
               placeholder="https://example.com"
             />
           </div>
@@ -126,7 +127,7 @@
               name="age"
               min="1"
               max="120"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
               placeholder="আপনার বয়স"
             />
           </div>
@@ -142,7 +143,7 @@
               type="date"
               id="birth_date"
               name="birth_date"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
             />
           </div>
 
@@ -157,7 +158,7 @@
               type="time"
               id="meeting_time"
               name="meeting_time"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
             />
           </div>
 
@@ -175,7 +176,7 @@
               min="0"
               max="100000"
               value="25000"
-              class="mt-1 block w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider-primary"
+              class="mt-1 block w-full h-2 bg-gray-200 rounded-lg range-primary appearance-none cursor-pointer slider-primary"
             />
             <div class="flex justify-between text-xs text-primary mt-1">
               <span>০ টাকা</span>
@@ -194,7 +195,7 @@
               type="color"
               id="favorite_color"
               name="favorite_color"
-              value="#2563eb"
+              value="#441a05"
               class="mt-1 block w-16 h-10 border border-primary rounded cursor-pointer"
             />
           </div>
@@ -214,7 +215,7 @@
             <select
               id="district"
               name="district"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
             >
               <option value="">জেলা নির্বাচন করুন</option>
               <option value="dhaka">ঢাকা</option>
@@ -237,7 +238,7 @@
               name="skills"
               multiple
               size="4"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
             >
               <option value="html">HTML</option>
               <option value="css">CSS</option>
@@ -262,7 +263,7 @@
                   type="radio"
                   name="gender"
                   value="male"
-                  class="radio-custom"
+                  class="radio-custom checked:bg-primary border border-primary"
                 />
                 <span class="ml-2 text-primary">পুরুষ</span>
               </label>
@@ -271,7 +272,7 @@
                   type="radio"
                   name="gender"
                   value="female"
-                  class="radio-custom"
+                  class="radio-custom checked:bg-primary border border-primary"
                 />
                 <span class="ml-2 text-primary">নারী</span>
               </label>
@@ -280,7 +281,7 @@
                   type="radio"
                   name="gender"
                   value="other"
-                  class="radio-custom"
+                  class="radio-custom checked:bg-primary border border-primary"
                 />
                 <span class="ml-2 text-primary">অন্যান্য</span>
               </label>
@@ -298,7 +299,7 @@
                   type="checkbox"
                   name="interests"
                   value="sports"
-                  class="checkbox-custom"
+                  class="checkbox-custom checked:bg-primary border border-primary"
                 />
                 <span class="ml-2 text-primary">খেলাধুলা</span>
               </label>
@@ -307,7 +308,7 @@
                   type="checkbox"
                   name="interests"
                   value="music"
-                  class="checkbox-custom"
+                  class="checkbox-custom checked:bg-primary border border-primary"
                 />
                 <span class="ml-2 text-primary">সংগীত</span>
               </label>
@@ -316,18 +317,9 @@
                   type="checkbox"
                   name="interests"
                   value="reading"
-                  class="checkbox-custom"
+                  class="checkbox-custom checked:bg-primary border border-primary"
                 />
                 <span class="ml-2 text-primary">পড়াশোনা</span>
-              </label>
-              <label class="flex items-center">
-                <input
-                  type="checkbox"
-                  name="interests"
-                  value="travel"
-                  class="checkbox-custom"
-                />
-                <span class="ml-2 text-primary">ভ্রমণ</span>
               </label>
             </div>
           </div>
@@ -351,7 +343,7 @@
               id="profile_photo"
               name="profile_photo"
               accept="image/*"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-medium file:bg-primary file:text-white hover:file:bg-primary-dark"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-medium file:bg-primary file:text-white hover:file:bg-primary-dark"
             />
           </div>
 
@@ -368,7 +360,7 @@
               name="documents"
               multiple
               accept=".pdf,.doc,.docx"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-medium file:bg-primary file:text-white hover:file:bg-primary-dark"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-medium file:bg-primary file:text-white hover:file:bg-primary-dark"
             />
           </div>
 
@@ -381,7 +373,7 @@
               id="message"
               name="message"
               rows="4"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus resize-vertical"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md resize-vertical"
               placeholder="আপনার বার্তা লিখুন..."
             ></textarea>
           </div>
@@ -395,7 +387,7 @@
               type="search"
               id="search"
               name="search"
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
               placeholder="অনুসন্ধান করুন..."
             />
           </div>
@@ -433,7 +425,7 @@
               name="disabled_input"
               disabled
               value="এই ফিল্ডটি সম্পাদনা করা যাবে না"
-              class="mt-1 block w-full border border-primary rounded p-2 input-disabled"
+              class="mt-1 block w-full border border-primary rounded p-2 bg-gray-100 cursor-not-allowed"
             />
           </div>
 
@@ -450,7 +442,7 @@
               id="required_input"
               name="required_input"
               required
-              class="mt-1 block w-full border border-primary rounded p-2 input-focus"
+              class="mt-1 block w-full border border-primary rounded p-2 focus:outline-none focus:border-primary focus:shadow-md"
               placeholder="এটি পূরণ করা আবশ্যক"
             />
           </div>
@@ -484,5 +476,6 @@
         </button>
       </div>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
