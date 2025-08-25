@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/icons/favicon/favicon.png"
+    />
+    <title>কওমী তালীম</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#441a05",
+              secondary: "#CA9629",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- sidebar start  -->
+    <aside
+      class="w-[270px] text-white bg-secondary min-h-screen transition-all duration-300 fixed top-0 left-0 bottom-0 md:translate-x-0 -translate-x-full"
+    >
+      <a
+        class="text-2xl font-semibold text-white px-4 pt-6 text-center w-full block"
+        href="/dashboard.html"
+        >কওমী তালীম</a
+      >
+      <ul class="mt-4">
+        <li class="pt-5 pb-3 px-6 text-[#ffffff70] uppercase font-bold text-sm">
+          প্রোফাইল
+        </li>
+
+        <li>
+          <a
+            href="#"
+            class="py-3 px-6 block w-full hover:bg-primary/30 transition-colors duration-300 flex items-center gap-3"
+          >
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 3C12.5523 3 13 3.44771 13 4L13 10C13 10.5523 12.5523 11 12 11L4 11C3.44772 11 3 10.5523 3 10L3 4C3 3.44772 3.44772 3 4 3L12 3ZM20 3C20.5523 3 21 3.44771 21 4L21 10C21 10.5523 20.5523 11 20 11L16 11C15.4477 11 15 10.5523 15 10L15 4C15 3.44771 15.4477 3 16 3L20 3ZM20 13C20.5523 13 21 13.4477 21 14L21 20C21 20.5523 20.5523 21 20 21L12 21C11.4477 21 11 20.5523 11 20L11 14C11 13.4477 11.4477 13 12 13L20 13ZM3 14C3 13.4477 3.44772 13 4 13L8 13C8.55229 13 9 13.4477 9 14L9 20C9 20.5523 8.55229 21 8 21L4 21C3.44772 21 3 20.5523 3 20L3 14Z"
+              ></path>
+            </svg>
+            <div>ড্যাশবোর্ড</div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="py-3 px-6 block w-full hover:bg-primary/30 transition-colors duration-300 flex items-center gap-3"
+          >
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+              ></path>
+            </svg>
+            <div>প্রতিষ্ঠানের তথ্য</div>
+          </a>
+        </li>
+        <li class="">
+          <button
+            type="button"
+            class="py-3 px-6 block w-full flex items-center justify-between collapsible-menu bg-[#A2711F]"
+          >
+            <div class="flex items-center gap-3">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 256 256"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M111.59,181.47A8,8,0,0,1,104,192H24a8,8,0,0,1-7.59-10.53l40-120a8,8,0,0,1,15.18,0ZM208,76a52,52,0,1,0-52,52A52.06,52.06,0,0,0,208,76Zm16,68H136a8,8,0,0,0-8,8v56a8,8,0,0,0,8,8h88a8,8,0,0,0,8-8V152A8,8,0,0,0,224,144Z"
+                ></path>
+              </svg>
+              <div>দারুল ইকামা</div>
+            </div>
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              class="font-thin text-sm duration-300 rotate-180 chevron"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+              ></path>
+            </svg>
+          </button>
+          <div class="transition-all duration-300">
+            <a
+              href="#"
+              class="block pl-12 py-2 bg-primary/10 hover:bg-primary/20"
+              >সেটিং</a
+            >
+            <a
+              href="#"
+              class="block pl-12 py-2 bg-primary/10 hover:bg-primary/20"
+              >আচরন মার্কস</a
+            >
+            <a
+              href="#"
+              class="block pl-12 py-2 bg-primary/10 hover:bg-primary/20"
+              >পরিছন্নতার রিপোর্ট</a
+            >
+          </div>
+        </li>
+        <li class="">
+          <button
+            type="button"
+            class="py-3 px-6 block w-full flex items-center justify-between collapsible-menu bg-[#A2711F]"
+          >
+            <div class="flex items-center gap-3">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+                ></path>
+              </svg>
+              <div>তালিমাত</div>
+            </div>
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              class="font-thin text-sm duration-300 rotate-180 chevron"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+              ></path>
+            </svg>
+          </button>
+          <div class="transition-all duration-300">
+            <a
+              href="#"
+              class="block pl-12 py-2 bg-primary/10 hover:bg-primary/20"
+              >সেটিং</a
+            >
+            <a
+              href="#"
+              class="block pl-12 py-2 bg-primary/10 hover:bg-primary/20"
+              >আচরন মার্কস</a
+            >
+            <a
+              href="#"
+              class="block pl-12 py-2 bg-primary/10 hover:bg-primary/20"
+              >পরিছন্নতার রিপোর্ট</a
+            >
+          </div>
+        </li>
+
+        <li class="pt-5 pb-3 px-6 text-[#ffffff70] uppercase font-bold text-sm">
+          অ্যাপস এবং পেজ
+        </li>
+        <li class="">
+          <button
+            type="button"
+            class="py-3 px-6 block w-full flex items-center justify-between collapsible-menu bg-[#A2711F]"
+          >
+            <div class="flex items-center gap-3">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+                ></path>
+              </svg>
+              <div>হিসাব বিভাগ</div>
+            </div>
+
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              class="font-thin text-sm duration-300 rotate-180 chevron"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+              ></path>
+            </svg>
+          </button>
+          <div class="transition-all duration-300">
+            <a
+              href="#"
+              class="block pl-12 py-2 bg-primary/10 hover:bg-primary/20"
+              >সেটিং</a
+            >
+            <a
+              href="#"
+              class="block pl-12 py-2 bg-primary/10 hover:bg-primary/20"
+              >আচরন মার্কস</a
+            >
+            <a
+              href="#"
+              class="block pl-12 py-2 bg-primary/10 hover:bg-primary/20"
+              >পরিছন্নতার রিপোর্ট</a
+            >
+          </div>
+        </li>
+      </ul>
+    </aside>
+    <!-- sidebar end  -->
+
+    <!-- topbar start  -->
+    <nav
+      class="bg-white fixed top-0 md:left-[270px] left-0 right-0 flex items-center px-6 z-10 h-[80px] transition-all duration-300"
+    >
+      <div
+        class="flex items-center justify-between w-full bg-gray-100 p-3 rounded-md"
+      >
+        <button
+          type="button"
+          id="sidebarToggle"
+          class="text-secondary focus:outline-none"
+        >
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            height="1.5em"
+            width="1.5em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            ></path>
+          </svg>
+        </button>
+        <div class="flex items-center gap-4">
+          <button class="focus:outline-none">
+            <img
+              src="./assets/images/user-avatar.png"
+              alt="User Avatar"
+              class="w-8 h-8 rounded-full"
+            />
+          </button>
+          <!-- Dropdown Menu -->
+          <div
+            class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden"
+          >
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >Profile</a
+            >
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >Settings</a
+            >
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >Logout</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- topbar end  -->
+
+    <!-- MAIN CONTENT -->
+    <main class="md:ml-[270px] ml-0 p-6 mt-[64px] transition-all duration-300">
+      <h1 class="text-3xl font-bold mb-6">ড্যাশবোর্ড</h1>
+      <p>স্বাগতম কওমী তালীম ড্যাশবোর্ডে!</p>
+    </main>
+    <!-- MAIN CONTENT END -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

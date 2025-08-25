@@ -77,3 +77,20 @@ input[type="range"]::-moz-range-thumb {
   background: #441a05;
   cursor: ew-resize;
 }
+
+
+/* aside {
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 48rem) {
+  aside {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 47.99rem) {
+  aside {
+    transform: translateX(-100%);
+  }
+} */
